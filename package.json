@@ -1,0 +1,40 @@
+{
+  "name": "@potentia/logger10",
+  "version": "1.0.0",
+  "description": "wrapper for pino^10.0.0 with google chat webhook support",
+  "main": "./index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "dist": "tsc",
+    "fix": "npm run lint && npm run pretty",
+    "lint": "eslint --fix .",
+    "pretty": "prettier --write .",
+    "test": "node --test --experimental-test-coverage dist/**/*.test.js"
+  },
+  "author": "Potentia Computing Inc.",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^10.0.0",
+    "globals": "^16.4.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^6.0.0",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.0.0"
+  },
+  "peerDependencies": {
+    "pino": "^10.0.0",
+    "pino-pretty": ">=11.0.0"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
