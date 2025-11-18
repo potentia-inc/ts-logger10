@@ -1,6 +1,6 @@
 {
   "name": "@potentia/logger10",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "wrapper for pino^10.0.0 with google chat webhook support",
   "main": "./index.js",
   "scripts": {
@@ -14,8 +14,8 @@
   "author": "Potentia Computing Inc.",
   "license": "MIT",
   "devDependencies": {
-    "@tsconfig/node22": "^22.0.0",
-    "@types/node": "^22.0.0",
+    "@tsconfig/node24": "^24.0.0",
+    "@types/node": "^24.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
     "eslint": "^9.0.0",
@@ -35,6 +35,6 @@
     ".": "./index.js"
   },
   "engines": {
-    "node": ">=22.0.0"
+    "node": ">=24.0.0"
   }
 }
